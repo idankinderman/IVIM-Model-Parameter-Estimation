@@ -160,21 +160,22 @@ def Test_net_SNR(inputs_len, depth, criterion, SNR_vec, path, test_data, ground_
      
     return rmse_Dp_vector_per_SNR, rmse_D_vector_per_SNR, rmse_F_vector_per_SNR, loss_vector_per_SNR
 
-"""
-This function calculates the approximated SNR of an image.
-- input image: the image.
-- input limits: a uniform looking square to calculate the snr.
-- output: the approximated snr.
-"""
-def image_snr_calculater(image, x_lim1, x_lim2, y_lim1, y_lim2):
-    return np.mean(image[x_lim1:x_lim2,y_lim1:y_lim2])/(math.sqrt(np.var(image[x_lim1:x_lim2,y_lim1:y_lim2])))
-
-"""
-This function calculates the approximated normalized std of an image.
-- input image: the image.
-- input limits: a uniform looking square to calculate the snr.
-- output: the approximated normalized std.
-"""
-def normalized_std_calculater(image, x_lim1, x_lim2, y_lim1, y_lim2):
-    return (math.sqrt(np.var(image[x_lim1:x_lim2,y_lim1:y_lim2])))/np.mean(image[x_lim1:x_lim2,y_lim1:y_lim2])
-
+if __name__ == '__main__':
+    """
+    This function calculates the approximated SNR of an image.
+    - input image: the image.
+    - input limits: a uniform looking square to calculate the snr.
+    - output: the approximated snr.
+    """
+    def image_snr_calculater(image, x_lim1, x_lim2, y_lim1, y_lim2):
+        return np.mean(image[x_lim1:x_lim2,y_lim1:y_lim2])/(math.sqrt(np.var(image[x_lim1:x_lim2,y_lim1:y_lim2])))
+    
+    """
+    This function calculates the approximated normalized std of an image.
+    - input image: the image.
+    - input limits: a uniform looking square to calculate the snr.
+    - output: the approximated normalized std.
+    """
+    def normalized_std_calculater(image, x_lim1, x_lim2, y_lim1, y_lim2):
+        return (math.sqrt(np.var(image[x_lim1:x_lim2,y_lim1:y_lim2])))/np.mean(image[x_lim1:x_lim2,y_lim1:y_lim2])
+    
