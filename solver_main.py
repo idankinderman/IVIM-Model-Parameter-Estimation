@@ -82,14 +82,15 @@ def snr_sweep(var_len, test_data, ground_truth):
         F_RMSE[i] = RMSE_Calculator(F_Mat, F_map)
         loss[i] = criterion(torch.from_numpy(Si_pred/S0_Mat),torch.from_numpy(Si/S0_Mat))
     return D_RMSE, Dp_RMSE, F_RMSE, loss
+
+if __name__ == '__main__':
+    #generate and save the values for later comparison
+    D_RMSE, Dp_RMSE, F_RMSE, loss = snr_sweep(SNR_len, noised, ground_truth)
     
-#generate and save the values for later comparison
-D_RMSE, Dp_RMSE, F_RMSE, loss = snr_sweep(SNR_len, noised, ground_truth)
-
-np.save('classic_solver_estimations/Classic_D', D_RMSE)
-np.save('classic_solver_estimations/Classic_Dp', Dp_RMSE)
-np.save('classic_solver_estimations/Classic_F', F_RMSE)
-np.save('classic_solver_estimations/Classic_loss', loss)
-
-#simulate_and_solve()
-#plt.title("Classic Solver Normalized RMSE for Var$\in$[0,2]")
+    np.save('classic_solver_estimations/Classic_D', D_RMSE)
+    np.save('classic_solver_estimations/Classic_Dp', Dp_RMSE)
+    np.save('classic_solver_estimations/Classic_F', F_RMSE)
+    np.save('classic_solver_estimations/Classic_loss', loss)
+    
+    #simulate_and_solve()
+    #plt.title("Classic Solver Normalized RMSE for Var$\in$[0,2]")
