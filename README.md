@@ -33,8 +33,6 @@
 - [References and credits](#references-and-credits)
 
 
-![-----------------------------------------------------](https://user-images.githubusercontent.com/62880315/143689276-058e2ec4-98ac-4367-863d-5334b959bb44.png)
-
 
 <h2 id="summary"> :pencil: Summary </h2>
 
