@@ -41,8 +41,6 @@ Our network achieved significantly improved results in terms of accuracy (RMSE).
 
 <br />
 
-![-----------------------------------------------------](https://user-images.githubusercontent.com/62880315/143689276-058e2ec4-98ac-4367-863d-5334b959bb44.png)
-
 
 <h2 id="dw-mri"> :brain: DW MRI </h2>
 
@@ -52,7 +50,7 @@ By using signals with different b values (proportional to the gradient of the ma
 <br />
 <br />
 
-![-----------------------------------------------------](https://user-images.githubusercontent.com/62880315/143689276-058e2ec4-98ac-4367-863d-5334b959bb44.png)
+
 
 <h2 id="the-ivim-model"> :open_book: The IVIM model</h2>
 
@@ -90,7 +88,7 @@ Following are parametric maps of an osteosarcoma tumor, obtained using classic a
 
 <br />
 
-![-----------------------------------------------------](https://user-images.githubusercontent.com/62880315/143689276-058e2ec4-98ac-4367-863d-5334b959bb44.png)
+
 
 <h2 id="existing-solvers"> :mortar_board: Existing solvers</h2>
 
@@ -126,7 +124,7 @@ Below is a schematic of the net:
 
 <br />
 
-![-----------------------------------------------------](https://user-images.githubusercontent.com/62880315/143689276-058e2ec4-98ac-4367-863d-5334b959bb44.png)
+
 
 <h2 id="the-proposed-nets"> :thought_balloon: The proposed nets</h2>
 
@@ -151,7 +149,7 @@ Below is an illustration of the training data:
 
 <br />
 
-![-----------------------------------------------------](https://user-images.githubusercontent.com/62880315/143689276-058e2ec4-98ac-4367-863d-5334b959bb44.png)
+
 
 <h2 id="results"> :bar_chart: Results</h2>
 
@@ -241,7 +239,7 @@ We devided each comparison in to two - first, comapring the basic net and the cl
 
 <br />
 
-![-----------------------------------------------------](https://user-images.githubusercontent.com/62880315/143689276-058e2ec4-98ac-4367-863d-5334b959bb44.png)
+
 
 <h2 id="clinical-data"> :stethoscope: Clinical Data</h2>
 
@@ -292,7 +290,7 @@ The nets, however, are capable of estimating the bio-markers even in ares with s
 <br />
 <br />
 
-![-----------------------------------------------------](https://user-images.githubusercontent.com/62880315/143689276-058e2ec4-98ac-4367-863d-5334b959bb44.png)
+
 
 <h2 id="files-and-usage"> :man_technologist: Files and Usage</h2>
 
@@ -313,7 +311,7 @@ The nets, however, are capable of estimating the bio-markers even in ares with s
 
 <br />
 
-![-----------------------------------------------------](https://user-images.githubusercontent.com/62880315/143689276-058e2ec4-98ac-4367-863d-5334b959bb44.png)
+
 
 <h2 id="references-and-credits"> :raised_hands: References and credits</h2>
 
